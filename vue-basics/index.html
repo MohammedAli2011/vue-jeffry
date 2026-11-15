@@ -1,10 +1,23 @@
-<!DOCTYPE html>
+<!DOCTYPE html class="h-full">
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>examples</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-$END$
+
+<body class="h-full grid place-items-center bg-gray-500 text-white">
+
+<!--    <app-Button :clicked="false" type="primary">submit</app-Button>-->
+<div id="app">
+</div>
+
+
+<script type="module">
+    import app from "./js/components/app.js"
+
+    Vue.createApp(app).mount('#app');
+</script>
 </body>
 </html>
